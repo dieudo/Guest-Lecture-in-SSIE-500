@@ -1,0 +1,42 @@
+---
+title: "SSIE 500 /Introduction to R"
+author: "Dieudonne"
+date: "2/6/2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## First step : Download R 
+*To use R ,you must choose a computing center called mirror ,I recommend choosing  Berkeley ,but you can use any mirror of your choice*
+
+Click on the link below and choose your downlaod type (window,mac....)
+  
+<https://cran.cnr.berkeley.edu>
+
+## Second step : Download Rstudio
+*It's fair to say that Rstudio is the best free IDE for R*
+
+click on  the link below and pick "RStudio Desktop Open Source License"
+
+<https://www.rstudio.com/products/rstudio/download/>
+
+##Tutorial
+
+<https://cran.r-project.org/doc/manuals/R-intro.html>
+
+## Test this short code on your machine !
+
+```{r function}
+library(knitr)
+X=c(1,2,3,4,5,6,7,8,9,10)
+FX=4*X^3+2*X^2+sqrt(X)
+df=data.frame(X,FX)
+kable(df)
+plot(X,FX)
+lines(X,FX)
+```
+
+
